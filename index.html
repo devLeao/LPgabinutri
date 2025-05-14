@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriela Dias - Nutricionista</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+    
+      <nav class="nav">
+        <div class="nav-esquerda desktop-only">
+          <a href="https://www.instagram.com/gabidias.nutri/" target="_blank">
+            <i class="fa fa-instagram fa-2x icon-nav"></i>
+          </a>
+          <a href="https://wa.link/hfazf0" target="_blank">
+            <i class="fa fa-whatsapp fa-2x icon-nav"></i>
+          </a>
+        </div>
+        
+<ul class="nav-menu">
+  <li><a href="#sobre">Sobre</a></li>
+  <li><a href="#especialidade">Especialidades</a></li>
+
+  <!-- LOGO CENTRALIZADA NO DESKTOP -->
+  <li class="logo-wrapper desktop-only">
+    <img src="./imagem/logocirculo.png" alt="Gabriela Dias Logo" class="logo" />
+  </li>
+
+  <li><a href="#agendamento">Agendamento</a></li>
+  <li><a href="#contato-numero">Contato</a></li>
+</ul>
+
+
+        
+        <div class="nav-direita desktop-only">
+          <button class="botao-agende" onclick="mostrarNumero()">Agende sua consulta</button>
+          <span id="numero-contato" style="display: none;">(31) 99920-1093  </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+  <div class="hero-content">
+    <img src="./imagem/logo.png" alt="Gabriela" class="imagem-principal" />
+
+  </div>
+</section>
+
+<section id="sobre" class="section" data-aos="fade-right">
+  <div class="sobre-container">
+    <div class="sobre-texto">
+      <h2>Sobre mim</h2>
+      <p class="texto-desktop">
+        Olá! Eu sou a Nutri Gabriela Dias, graduanda em Nutrição pela UFMG, com experiência prática em nutrição materno-infantil, saúde da mulher e reeducação alimentar. Faço parte do Núcleo de Estudos em Alimentação e Nutrição nos Ciclos da Vida (NEANC), desenvolvendo pesquisas científicas reconhecidas pelo CNPq. Acredito em uma abordagem individualizada, livre de extremismos.
+      </p>
+      <p class="texto-mobile">
+        Olá! Eu sou a Nutri Gabriela Dias, graduanda em Nutrição pela UFMG, com experiência prática em nutrição materno-infantil, saúde da mulher e reeducação alimentar. Faço parte do Núcleo de Estudos em Alimentação e Nutrição nos Ciclos da Vida (NEANC), desenvolvendo pesquisas científicas reconhecidas pelo CNPq. Acredito em uma abordagem individualizada, livre de extremismos.
+      </p>
+    </div>
+    
+    <div class="sobre-imagem">
+      <img src="./imagem/foto-gabriela-sobre.png" alt="Gabriela Dias" />
+    </div>
+  </div>
+</section>
+
+<section id="especialidade" class="section especialidades" data-aos="fade-right">
+  <div class="container">
+    <h2 class="section-title">Especialidades</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Saúde da Mulher</h3>
+        <p>atendimento de gestantes, puérperas e prevenção/tratamento para doenças ginecológicas</p>
+      </div>
+      <div class="card">
+        <h3>Reeducação Alimentar</h3>
+        <p>Transformação de hábitos alimentares de maneira leve e sustentável.</p>
+      </div>
+      <div class="card">
+        <h3>Emagrecimento Saudável</h3>
+        <p>Perda de peso baseada em ciência, respeitando seu metabolismo.</p>
+      </div>
+      <div class="card">
+        <h3>Hipertrofia</h3>
+        <p>Alimentação personalizada para ganho de massa muscular.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="section depoimentos" data-aos="fade-right">
+  <div class="container">
+    <h2 class="titulo-secao">O que dizem sobre o atendimento</h2>
+    <div class="carrossel-depoimentos">
+      <button class="seta seta-esquerda" onclick="mudarSlide(-1)">❮</button>
+      
+      <div class="carrossel-conteudo">
+        <img src="./imagem/print1.jpg" alt="Depoimento 1" class="slide ativo" />
+        <img src="./imagem/print2.jpg" alt="Depoimento 2" class="slide" />
+        <img src="./imagem/print3.jpg" alt="Depoimento 3" class="slide" />
+        <img src="./imagem/print4.jpg" alt="Depoimento 3" class="slide" />
+        <img src="./imagem/print5.jpg" alt="Depoimento 3" class="slide" />
+        <img src="./imagem/print6.jpg" alt="Depoimento 3" class="slide" />
+        <!-- Adicione mais prints aqui -->
+      </div>
+      
+      <button class="seta seta-direita" onclick="mudarSlide(1)">❯</button>
+    </div>
+    
+    </div>
+    
+    
+  </div>
+</section>
+
+<section id="mod-atendi" class="section modalidades"  data-aos="fade-right">
+  <div class="container">
+    <h2 class="section-title">Modalidades de Atendimento</h2>
+    <div class="modalidades-container">
+      <div class="modalidade-card"  data-lado="esquerda"  data-imagem="./imagem/presencial.jpg">
+        <i class="fa fa-home"></i>
+        <h3>Presencial</h3>
+        <p>Avaliação física completa(dobras cutâneas e circuferências).</p>
+        <p>Estruturação do plano alimentar durante o atendimento e envio em até 48h.</p>
+        <p>Suporte via Whatsapp por 30 dias.</p>
+        <p>Retorno virtual incluso em até 21 dias.</p>
+      </div>
+      <div class="modalidade-card" data-lado="direita" data-imagem="./imagem/online.jpg">
+        <i class="fa fa-video-camera"></i>
+        <h3>Online</h3>
+        <p>Atendimento via Google Meet.</p>
+        <p>Avaliação por fotos e medições domiciliares.</p>
+        <p>Plano alimentar entregue em até 48hrs.</p>
+        <p>Suporte via Whatsapp por 30 dias.</p>
+        <p>Retorno virtual incluso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="atendimento" class="section atendimento">
+  <div class="container">
+    <h2 class="titulo-secao">Espaço de Atendimento</h2>
+    <p class="descricao-espaco">
+      Um espaço confortável, acolhedor e seguro para te receber. Estrutura completa com portaria 24h, controle de acesso, câmeras de segurança e elevadores modernos.
+    </p>
+
+    <div class="carrossel-espaco-custom">
+  <button class="seta-carrossel" onclick="trocarEspaco(-1)">❮</button>
+  <div class="faixa-imagens">
+    <div class="imagem-slide"><img src="./imagem/escritorio1.jpeg" alt="Espaço 1"></div>
+    <div class="imagem-slide"><img src="./imagem/escritorio2.jpeg" alt="Espaço 2"></div>
+    <div class="imagem-slide"><img src="./imagem/escritorio3.jpeg" alt="Espaço 3"></div>
+    <div class="imagem-slide"><img src="./imagem/escritorio4.jpeg" alt="Espaço 4"></div>
+    <div class="imagem-slide"><img src="./imagem/escritorio5.jpeg" alt="Espaço 5"></div>
+    <div class="imagem-slide"><img src="./imagem/escritorio6.jpeg" alt="Espaço 6"></div>
+  </div>
+  <button class="seta-carrossel" onclick="trocarEspaco(1)">❯</button>
+</div>
+
+  </div>
+</section>
+
+
+  <section id="agendamento" class="section"  data-aos="fade-right">
+    <div class="container">
+      <h2>Agendamento</h2>
+      <p>Preencha o formulário abaixo para agendar sua consulta</p>
+  
+      <form class="formulário-contato" id="formulario" onsubmit="enviarWhats(event)">
+        <div class="linha-dupla">
+          <div class="grupo-form">
+            <input type="text" placeholder="Nome" class="campo-form" id="nome" required />
+          </div>
+        </div>
+  
+        <div class="linha-dupla">
+       
+          <div class="grupo-form">
+            <select id="especialidade" class="campo-form" required>
+              <option value="" disabled selected>Selecione uma especialidade</option>
+              <option value="Saúde da Mulher">Saúde da Mulher</option>
+              <option value="Reeducação Alimentar">Reeducação Alimentar</option>
+              <option value="Emagrecimento Saudável">Emagrecimento Saudável</option>
+              <option value="Hipertrofia">Hipertrofia</option>
+              <option value="Outro">Outro</option>
+            </select>
+            
+          </div>
+        </div>
+  
+        <div class="grupo-form">
+          <textarea class="campo-form textarea-mensagem" placeholder="Digite sua mensagem" rows="5" id="mensagem" required></textarea>
+        </div>
+  
+        <button type="submit" class="botao-form">Enviar Whatsapp</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <section id="contato-numero" class="section" data-aos="fade-right">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Email:  gabidiasgnutri@gmail.com</p>
+      <p>Telefone: (31) 99920-1093</p>
+      <p>Endereço:  Av. Augusto de Lima, 479, Sala 1311 (13º andar), Centro, Belo Horizonte/MG</p>
+    </div>
+  </section>
+
+  <div class="identidade-gabi">
+    <div class="texto">
+      <h3 class="assinatura-gabi">Gabriela Dias</h3>
+      <p>CRN9 35097/P</p> <!-- Substitua pelo CRN real -->
+      <p>Nutricionista</p>
+    </div>
+    <div class="foto">
+      <img src="./imagem/foto-gabriela-sobre.png" alt="Gabriela Dias" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Gabriela Dias - Todos os direitos reservados</p>
+      <p>Site feito por <a href="https://devleao.netlify.app/" target="_blank" style="color: var(--dourado); text-decoration: underline;">Dev Leão</a></p>
+
+    
+  </footer>
+  <script>
+    function enviarWhats(event) {
+      event.preventDefault();
+  
+      const nome = document.getElementById('nome').value;
+      const especialidade = document.getElementById('especialidade').value;
+      const mensagem = document.getElementById('mensagem').value;
+  
+      const texto = `Olá, me chamo ${nome} e vim pelo site! Gostaria de ter mais informações. Mensagem: ${mensagem}`;
+      const numero = '5531999201093'; // número da Gabriela com DDI +55
+  
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+  <script>
+    function mostrarNumero() {
+      const botao = document.querySelector('.botao-agende');
+      const numero = document.getElementById('numero-contato');
+  
+      botao.style.display = 'none';
+      numero.style.display = 'inline';
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+<script>
+  const modAtendi = document.getElementById('mod-atendi');
+  const cards = document.querySelectorAll('.modalidade-card');
+
+  // Definir imagens específicas por lado
+  modAtendi.style.setProperty('--img-presencial', "url('./imagem/presencial.jpg')");
+  modAtendi.style.setProperty('--img-online', "url('./imagem/online.jpg')");
+
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const lado = card.getAttribute('data-lado');
+
+      if (lado === 'esquerda') {
+        modAtendi.style.setProperty('--clip-before', 'polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+        modAtendi.style.setProperty('--clip-after', 'polygon(100% 0, 100% 0, 100% 100%, 100% 100%)');
+      } else {
+        modAtendi.style.setProperty('--clip-before', 'polygon(0 0, 0 0, 0 100%, 0 100%)');
+        modAtendi.style.setProperty('--clip-after', 'polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      modAtendi.style.setProperty('--clip-before', 'polygon(0 0, 50% 0, 50% 100%, 0% 100%)');
+      modAtendi.style.setProperty('--clip-after', 'polygon(50% 0, 100% 0, 100% 100%, 50% 100%)');
+    });
+  });
+</script>
+
+
+
+
+
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.carrossel-conteudo .slide');
+
+  function mostrarSlide(n) {
+    slides.forEach(slide => slide.classList.remove('ativo'));
+
+    slideIndex = (n + slides.length) % slides.length;
+    slides[slideIndex].classList.add('ativo');
+  }
+
+  function mudarSlide(direcao) {
+    mostrarSlide(slideIndex + direcao);
+  }
+
+  // Inicializa com o primeiro slide
+  mostrarSlide(slideIndex);
+</script>
+
+
+<script>
+  const imagensEspaco = document.querySelectorAll('.faixa-imagens .imagem-slide');
+  let indexAtivo = 1; // começa com a imagem 2 em destaque
+
+  function atualizarCarrosselEspaco() {
+    imagensEspaco.forEach((img, i) => {
+      img.classList.remove('active', 'blur');
+      img.style.display = 'none';
+
+      if (i === indexAtivo) {
+        img.classList.add('active');
+        img.style.display = 'block';
+      } else if (i === indexAtivo - 1 || i === indexAtivo + 1) {
+        img.classList.add('blur');
+        img.style.display = 'block';
+      }
+    });
+  }
+
+  function trocarEspaco(direcao) {
+    indexAtivo += direcao;
+
+    if (indexAtivo < 1) indexAtivo = imagensEspaco.length - 2;
+    if (indexAtivo > imagensEspaco.length - 2) indexAtivo = 1;
+
+    atualizarCarrosselEspaco();
+  }
+
+  // Auto play
+  setInterval(() => {
+    trocarEspaco(1);
+  }, 6000);
+
+  atualizarCarrosselEspaco();
+</script>
+
+
+</body>
+</html>
