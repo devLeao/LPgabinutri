@@ -11,46 +11,59 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
 
 
 </head>
 <body>
-  <header class="header">
-    <div class="nav-container">
-    
-      <nav class="nav">
-        <div class="nav-esquerda desktop-only">
-          <a href="https://www.instagram.com/gabidias.nutri/" target="_blank">
-            <i class="fa fa-instagram fa-2x icon-nav"></i>
-          </a>
-          <a href="https://wa.link/hfazf0" target="_blank">
-            <i class="fa fa-whatsapp fa-2x icon-nav"></i>
-          </a>
-        </div>
-        
-<ul class="nav-menu">
-  <li><a href="#sobre">Sobre</a></li>
-  <li><a href="#especialidade">Especialidades</a></li>
+    <header class="header">
+      
+      <div class="nav-container">
+      
+        <nav class="nav">
+          <div class="nav-esquerda desktop-only">
+            <a href="https://www.instagram.com/gabidias.nutri/" target="_blank">
+              <i class="fa fa-instagram fa-2x icon-nav"></i>
+            </a>
+            <a href="https://wa.link/hfazf0" target="_blank">
+              <i class="fa fa-whatsapp fa-2x icon-nav"></i>
+            </a>
+          </div>
+          <!-- Logo para MOBILE -->
+<div class="logo-wrapper mobile-only">
+  <img src="./imagem/logocirculo.png" alt="Gabriela Dias Logo" class="logo" />
+  <button class="nav-toggle" onclick="abrirMenu()">☰</button>
 
-  <!-- LOGO CENTRALIZADA NO DESKTOP -->
-  <li class="logo-wrapper desktop-only">
-    <img src="./imagem/logocirculo.png" alt="Gabriela Dias Logo" class="logo" />
-  </li>
+  
+</div>
 
-  <li><a href="#agendamento">Agendamento</a></li>
-  <li><a href="#contato-numero">Contato</a></li>
-</ul>
+          
+          
+  <ul class="nav-menu">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#especialidade">Especialidades</a></li>
+
+    <!-- LOGO CENTRALIZADA NO DESKTOP -->
+    <li class="logo-wrapper desktop-only">
+      <img src="./imagem/logocirculo.png" alt="Gabriela Dias Logo" class="logo" />
+    </li>
+
+    <li><a href="#agendamento">Agendamento</a></li>
+    <li><a href="#contato-numero">Contato</a></li>
+  </ul>
 
 
-        
-        <div class="nav-direita desktop-only">
-          <button class="botao-agende" onclick="mostrarNumero()">Agende sua consulta</button>
-          <span id="numero-contato" style="display: none;">(31) 99920-1093  </span>
-        </div>
-      </nav>
-    </div>
-  </header>
+          
+          <div class="nav-direita desktop-only">
+            <a href="https://wa.me/5531999201093" target="_blank">
+    <button class="botao-agende">Agende sua consulta</button>
+  </a>
+
+          </div>
+        </nav>
+      </div>
+    </header>
 
   <section class="hero">
   <div class="hero-content">
@@ -64,10 +77,14 @@
     <div class="sobre-texto">
       <h2>Sobre mim</h2>
       <p class="texto-desktop">
-        Olá! Eu sou a Nutri Gabriela Dias, graduanda em Nutrição pela UFMG, com experiência prática em nutrição materno-infantil, saúde da mulher e reeducação alimentar. Faço parte do Núcleo de Estudos em Alimentação e Nutrição nos Ciclos da Vida (NEANC), desenvolvendo pesquisas científicas reconhecidas pelo CNPq. Acredito em uma abordagem individualizada, livre de extremismos.
+        Olá! Sou a nutricionista Gabriela Dias, formada em Nutrição pela Universidade Federal de Minas Gerais (UFMG) em 2024. Atuo na área clínica com foco em nutrição materno-infantil, saúde da mulher, reeducação alimentar, emagrecimento e hipertrofia muscular. Além da prática clínica, integro o Núcleo de Estudos em Alimentação e Nutrição nos Ciclos da Vida (NEANC), onde participo do desenvolvimento de pesquisas e materiais técnico-científicos.
+
+Acredito em uma nutrição individualizada, baseada em evidências científicas, acolhedora e livre de extremismos. Meu objetivo é te ajudar a construir uma relação mais leve, consciente e equilibrada com a alimentação.
       </p>
       <p class="texto-mobile">
-        Olá! Eu sou a Nutri Gabriela Dias, graduanda em Nutrição pela UFMG, com experiência prática em nutrição materno-infantil, saúde da mulher e reeducação alimentar. Faço parte do Núcleo de Estudos em Alimentação e Nutrição nos Ciclos da Vida (NEANC), desenvolvendo pesquisas científicas reconhecidas pelo CNPq. Acredito em uma abordagem individualizada, livre de extremismos.
+        Olá! Sou a nutricionista Gabriela Dias, formada em Nutrição pela Universidade Federal de Minas Gerais (UFMG) em 2024. Atuo na área clínica com foco em nutrição materno-infantil, saúde da mulher, reeducação alimentar, emagrecimento e hipertrofia muscular. Além da prática clínica, integro o Núcleo de Estudos em Alimentação e Nutrição nos Ciclos da Vida (NEANC), onde participo do desenvolvimento de pesquisas e materiais técnico-científicos.
+
+Acredito em uma nutrição individualizada, baseada em evidências científicas, acolhedora e livre de extremismos. Meu objetivo é te ajudar a construir uma relação mais leve, consciente e equilibrada com a alimentação.
       </p>
     </div>
     
@@ -83,7 +100,7 @@
     <div class="cards-container">
       <div class="card">
         <h3>Saúde da Mulher</h3>
-        <p>atendimento de gestantes, puérperas e prevenção/tratamento para doenças ginecológicas</p>
+        <p>Atendimento de gestantes, puérperas e prevenção/tratamento para doenças ginecológicas.</p>
       </div>
       <div class="card">
         <h3>Reeducação Alimentar</h3>
@@ -103,7 +120,7 @@
 
 <section id="depoimentos" class="section depoimentos" data-aos="fade-right">
   <div class="container">
-    <h2 class="titulo-secao">O que dizem sobre o atendimento</h2>
+    <h2 class="titulo-secao">O que dizem sobre o atendimento:</h2>
     <div class="carrossel-depoimentos">
       <button class="seta seta-esquerda" onclick="mudarSlide(-1)">❮</button>
       
@@ -126,7 +143,7 @@
   </div>
 </section>
 
-<section id="mod-atendi" class="section modalidades"  data-aos="fade-right">
+<section id="mod-atendi" class="section modalidades" data-aos="fade-right">
   <div class="container">
     <h2 class="section-title">Modalidades de Atendimento</h2>
     <div class="modalidades-container">
@@ -212,25 +229,29 @@
   </section>
   
 
-  <section id="contato-numero" class="section" data-aos="fade-right">
-    <div class="container">
-      <h2>Contato</h2>
-      <p>Email:  gabidiasgnutri@gmail.com</p>
-      <p>Telefone: (31) 99920-1093</p>
-      <p>Endereço:  Av. Augusto de Lima, 479, Sala 1311 (13º andar), Centro, Belo Horizonte/MG</p>
+<section id="contato-numero" class="section contato" data-aos="fade-right">
+  <div class="container">
+    <h2 class="section-title">Contato</h2>
+    <div class="contato-info">
+      <p><i class="fa fa-envelope"></i> gabidiasgnutri@gmail.com</p>
+      <p><i class="fa fa-phone"></i> (31) 99920-1093</p>
+      <p><i class="fa fa-map-marker"></i> Av. Augusto de Lima, 479, Sala 1311 (13º andar), Centro, Belo Horizonte/MG</p>
     </div>
-  </section>
 
-  <div class="identidade-gabi">
-    <div class="texto">
-      <h3 class="assinatura-gabi">Gabriela Dias</h3>
-      <p>CRN9 35097/P</p> <!-- Substitua pelo CRN real -->
-      <p>Nutricionista</p>
-    </div>
-    <div class="foto">
-      <img src="./imagem/foto-gabriela-sobre.png" alt="Gabriela Dias" />
+    <div class="assinatura-gabriela">
+      <div class="assinatura-texto">
+        <h3>Gabriela Dias</h3>
+        <p>Nutricionista</p>
+        <p>CRN9 35097/P</p>
+      </div>
+      <div class="assinatura-foto">
+        <img src="./imagem/gabi.jpg" alt="Gabriela Dias" />
+      </div>
     </div>
   </div>
+</section>
+
+
 
   <footer class="footer">
     <div class="container">
@@ -357,6 +378,16 @@
   }, 6000);
 
   atualizarCarrosselEspaco();
+</script>
+
+<a href="https://wa.me/5531999201093" class="whatsapp-flutuante" target="_blank" aria-label="Agende pelo WhatsApp">
+  <i class="fa fa-whatsapp"></i>
+</a>
+<script>
+  function abrirMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('open');
+  }
 </script>
 
 
